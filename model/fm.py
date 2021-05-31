@@ -43,7 +43,7 @@ def fm_fn(inputs, is_test):
         tf.add_to_collections("input_tensor", weight_)
         tf.add_to_collections("output_tensor", out_tmp)
 
-    # 损失函数loss label = inputs["label"]  # [batch, 1]
+    # loss label = inputs["label"]  # [batch, 1]
     loss_ = tf.reduce_mean(
         tf.nn.sigmoid_cross_entropy_with_logits(
             logits=out_, labels=inputs["label"]))
