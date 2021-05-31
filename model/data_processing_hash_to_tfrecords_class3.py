@@ -115,7 +115,7 @@ def totfrecords(file, save_dir):
 
 
 def main():
-    # step01: 处理训练数据
+    # step01: training data
     click_path = "../data2/rawdata"
     train, test = ext_train_test(click_path)
 
