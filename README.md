@@ -1,4 +1,4 @@
-# Personalized New Recommendation System  
+# Personalized News Recommendation System  
 Multi-channel candidate generation
 DeepFM ranking model
 redis info
