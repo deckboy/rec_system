@@ -42,12 +42,12 @@ class VectorServer:
         item_emb_np = item_emb_np / np.linalg.norm(
             item_emb_np, axis=1, keepdims=True)
 
-        # 建立faiss/BallTree索引
+        # build faiss/BallTree index
         print("start build tree ... ")
         self.item_tree = neighbors.BallTree(item_emb_np, leaf_size=40)
         print("build tree end")
 
-    # todo: items: [vector, vector, vector] -> n*embedding的矩阵
+    # todo: items: [vector, vector, vector] -> n*embedding
     def get_sim_item(self, items, cut_off):
         sim, idx = self.item_tree.query(items, cut_off)
 
