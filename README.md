@@ -1,7 +1,7 @@
 # Personalized News Recommendation System  
-Multi-channel candidate generation
-DeepFM ranking model
-redis info
+Multi-channel candidate generation  
+DeepFM ranking model  
+redis info  
 redis://:123456@127.0.0.1:6379
 - db=1 user feature
 - db=2 item feature
