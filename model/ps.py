@@ -48,7 +48,7 @@ class PS(metaclass=Singleton):
             self.params_server.pop(k)
 
     def save(self, path):
-        print("总共包含keys: ", len(self.params_server))
+        print("keys: ", len(self.params_server))
         writer = open(path, "w")
         for k, v in self.params_server.items():
             writer.write(
