@@ -1,3 +1,6 @@
+Peronalized New Recommendation System  
+Multi-channel candidate generation
+DeepFM ranking model
 ## redis info
 # redis://:123456@127.0.0.1:6379
 - db=1 user feature
